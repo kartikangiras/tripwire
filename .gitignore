@@ -1,0 +1,14 @@
+# data is never committed: the AI Village licence forbids redistribution
+data/
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.parquet
+# node — the built UI (src/tripwire/static) IS committed so `tripwire ui` runs without Node
+client/node_modules/
+client/dist/
+# os
+.DS_Store
