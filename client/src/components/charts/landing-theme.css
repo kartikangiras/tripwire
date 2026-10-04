@@ -1,0 +1,3 @@
+/* light-theme values for the chart kit's CSS variables, scoped to the landing page */
+.alt .vis.chart{--ink:#141414;--ink-2:#5b5f66;--ink-3:#8a8f96;--line-2:rgba(20,20,20,.16);--tip-bg:#ffffff;
+  --m-requery:#2a78d6;--m-contam:#eb6834;--m-mention:#9aa1a8;--st-critical:#d03b3b;--st-good:#0ca30c;--s-4:#d8d5ce}
