@@ -1,0 +1,22 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+      - run: uv sync --all-groups
+      - run: uv run ruff check src tests
+      - run: uv run pytest -q
+      - name: smoke-test the zero-access demo path
+        run: uv run tripwire scan --corpus generic --path examples/demo.jsonl --map examples/demo.map.json
+  ui:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: client } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm ci
+      - run: npm run build
