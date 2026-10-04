@@ -1,0 +1,4 @@
+{"timestamp":"2026-05-01T09:00:00Z","actor":"researcher-01","surface":"retrieval","query":"what was Q1 revenue?","text":"By the end of January, revenue had reached $48,000 across 12 accounts.","scope_start":1,"scope_end":31}
+{"timestamp":"2026-05-01T09:00:40Z","actor":"researcher-01","surface":"chat","text":"Pulling from history: last quarter we booked $48,000 in total revenue. That's our baseline."}
+{"timestamp":"2026-05-02T11:20:00Z","actor":"analyst-02","surface":"chat","text":"Using the $48,000 baseline for the model, published to the dashboard."}
+{"timestamp":"2026-05-09T14:05:00Z","actor":"human:dana","surface":"chat","text":"Correction — last quarter total revenue was $171,000, not $48,000. January alone was 48k."}
