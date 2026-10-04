@@ -1,0 +1,44 @@
+{
+  "method": "loose screen (any money value in a bounded retrieval answer reappearing in chat within 21d) -> full hand-labelled census of all 109 distinct unflagged values; no sampling",
+  "screen_ceiling": "money values repeated verbatim only; other quantities and paraphrased numbers are invisible to screen and detector alike",
+  "pre_fix": {
+    "true_strips_known": 2,
+    "detected": 1,
+    "recall_within_screen": 0.5,
+    "false_positives": 0
+  },
+  "post_fix": {
+    "true_strips_known": 2,
+    "detected": 2,
+    "recall_within_screen": 1.0,
+    "false_positives": 0,
+    "precision": 1.0
+  },
+  "misses_found_by_census": [
+    {
+      "value": 355.0,
+      "cause": [
+        "unbounded-qualifier vocabulary lacked era/first-campaign framing",
+        "a bare month/year label was treated as a preserved bound",
+        "repair-language filter scanned the whole message"
+      ]
+    }
+  ],
+  "fixes": [
+    "era/first-drive vocabulary",
+    "bound preservation requires a day-level reference or explicit bounding phrase",
+    "repair language only within 240 chars of the value",
+    "completed outcomes excluded on the origin side"
+  ],
+  "unflagged_categories": {
+    "STRIP": 1,
+    "bound_kept": 23,
+    "collision": 18,
+    "constant": 35,
+    "delta": 2,
+    "final": 4,
+    "misattrib": 1,
+    "retraction": 1,
+    "same_day": 24
+  }
+}
